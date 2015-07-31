@@ -25,6 +25,7 @@ hs_err_pid*
 /build
 /.gradle
 /gradle
+gradlew*
 
 #occupational hazards
 /eclipse/
@@ -35,8 +36,10 @@ hs_err_pid*
 *.rej
 /patches-/
 # FML changelog
-changelog.txt
+forge*changelog.txt
 /patches_old/
 /patches_old_bak/
 *.py
 *.7z
+MinecraftForge-*.txt
+*-fml.txt
