@@ -43,3 +43,4 @@ forge*changelog.txt
 *.7z
 MinecraftForge-*.txt
 *-fml.txt
+/README.txt

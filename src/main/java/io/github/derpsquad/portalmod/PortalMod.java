@@ -1,4 +1,6 @@
-package io.github.richardyin.portalmod;
+package io.github.derpsquad.portalmod;
+
+import io.github.derpsquad.portalmod.block.PortalModBlocks;
 
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.Logger;
@@ -27,5 +29,6 @@ public class PortalMod
     public void init(FMLInitializationEvent event)
     {
 		logger.info("Hello World!");
+		PortalModBlocks.init();
     }
 }
