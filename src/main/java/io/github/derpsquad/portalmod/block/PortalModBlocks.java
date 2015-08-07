@@ -8,6 +8,6 @@ public class PortalModBlocks {
 	public static Block basicPortal;
 	
 	public static void init() {
-		basicPortal = new BlockBasicPortal();
+		basicPortal = new BlockSpawnTeleporter();
 	}
 }
