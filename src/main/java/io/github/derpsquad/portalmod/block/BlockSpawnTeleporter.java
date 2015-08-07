@@ -39,6 +39,7 @@ public class BlockSpawnTeleporter extends ModBlock {
         	BlockPos spawnPos = worldIn.getSpawnPoint();
         	for(Entity entity : players) {
         		entity.setPosition(spawnPos.getX() + 0.5, spawnPos.getY() + 0.5, spawnPos.getZ() + 0.5);
+        		entity.setVelocity(0, 0, 0);
         	}
         }
     }
