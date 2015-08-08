@@ -2,6 +2,6 @@
 	"_comment": "This section goes in ~/portalBasic.json to initialize the portalBasic block",
 	"parent": "block/cube_all",
 	"textures": {
-		"all": "PortalMod:blocks/portalBasic"
+		"all": "PortalMod:blocks/teleporterSpawn"
 	}
 }

@@ -1,6 +1,6 @@
 {
 	"_comment": "This section goes in ~/models/portalBasic.json to initialize the portalBasic block",
-	"parent": "PortalMod:block/portalBasic",
+	"parent": "PortalMod:block/teleporterSpawn",
 	"display":	{
 		"thirdperson": {
 			"rotation": [10,-45,170],

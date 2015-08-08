@@ -1,6 +1,6 @@
 {
 	"_comment": "This section goes in ~/blockstates/portalBasic.json to initialize the portalBasic block",
 	"variants": {
-		"normal": { "model": "PortalMod:portalBasic" }
+		"normal": { "model": "PortalMod:teleporterSpawn" }
 	}
 }
