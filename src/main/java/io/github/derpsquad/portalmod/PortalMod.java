@@ -1,11 +1,13 @@
 package io.github.derpsquad.portalmod;
 
 import io.github.derpsquad.portalmod.block.PortalModBlocks;
+import io.github.derpsquad.portalmod.item.PortalModItems;
 
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.Logger;
 
 import net.minecraft.init.Blocks;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.FMLLog;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -30,5 +32,6 @@ public class PortalMod
     {
 		logger.info("Hello World!");
 		PortalModBlocks.init();
+		PortalModItems.init();
     }
 }
