@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "portalmod",
+  "name": "Portal Mod",
+  "description": "A mod with portals in it.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["BovineColonel, stanthelion, CovenatSlayer117"],
+  "credits": "",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
