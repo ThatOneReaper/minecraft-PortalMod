@@ -14,4 +14,8 @@ public class ModBlock extends Block {
 		setUnlocalizedName(PortalMod.MODID + "_" + name);
 		setCreativeTab(CreativeTabs.tabRedstone); // TODO new creative tab
 	}
+	
+	@Override public int getRenderType(){
+		return 3;
+	}
 }
