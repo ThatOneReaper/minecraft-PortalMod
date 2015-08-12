@@ -11,6 +11,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.entity.RenderItem;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.FMLLog;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -41,7 +42,7 @@ public class PortalMod
 		if(event.getSide() == Side.CLIENT)
 		{
 			RenderItem renderItem = Minecraft.getMinecraft().getRenderItem();
-			renderItem.getItemModelMesher().register(ItemTeleportationCore, new ModelResourceLocation(Reference.MODID + ":" + ((PortalMod) ItemTeleportationCore).getName(), "inventory") );
+			renderItem.getItemModelMesher().register(PortalModItems.teleportationCore,0,new ModelResourceLocation(PortalMod.MODID + ":" + ((ItemTeleportationCore)PortalModItems.teleportationCore).getName()));
 		}
     }
 }
