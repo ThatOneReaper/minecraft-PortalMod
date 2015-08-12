@@ -1,6 +1,7 @@
 {
 	"parent": "block/cube_all",
 	"textures": {
-		"all": "portalmod:blocks/teleporterSpawn"
+		"all": "portalmod:blocks/teleporterSpawn",
+       "particle": "blocks/lapis_block"
 	}
 }
