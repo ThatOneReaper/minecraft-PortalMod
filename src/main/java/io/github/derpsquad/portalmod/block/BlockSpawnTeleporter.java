@@ -1,10 +1,13 @@
 package io.github.derpsquad.portalmod.block;
 
+import io.github.derpsquad.portalmod.PortalMod;
+
 import java.util.List;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.AxisAlignedBB;
@@ -38,8 +41,10 @@ public class BlockSpawnTeleporter extends ModBlock {
         	
         	BlockPos spawnPos = worldIn.getSpawnPoint();
         	for(Entity entity : players) {
-        		entity.setPosition(spawnPos.getX() + 0.5, spawnPos.getY() + 0.5, spawnPos.getZ() + 0.5);
-        		entity.setVelocity(0, 0, 0);
+        		entity.setPositionAndUpdate((double)spawnPos.getX() + 0.5D, (double)(spawnPos.getY() + 1), (double)spawnPos.getZ() + 0.5D);
+        		while(!worldIn.getCollidingBoundingBoxes(entity, entity.getEntityBoundingBox()).isEmpty()) {
+        			entity.setPositionAndUpdate(entity.posX, entity.posY + 1, entity.posZ);
+        		}
         	}
         }
     }
