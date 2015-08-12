@@ -43,6 +43,8 @@ public class PortalMod
 		{
 			RenderItem renderItem = Minecraft.getMinecraft().getRenderItem();
 			renderItem.getItemModelMesher().register(PortalModItems.teleportationCore,0,new ModelResourceLocation(PortalMod.MODID + ":" + ((ItemTeleportationCore)PortalModItems.teleportationCore).getName()));
+			logger.info("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+			logger.info(PortalMod.MODID + ":" + ((ItemTeleportationCore)PortalModItems.teleportationCore).getName());
 		}
     }
 }

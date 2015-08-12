@@ -1,7 +1,7 @@
 {
     "parent": "builtin/generated",
     "textures": {
-        "layer0": "portalMod:items/teleportationCore.png"
+        "layer0": "portalMod:items/teleportationCore"
     },
     "display": {
         "thirdperson": {
