@@ -1,34 +1,38 @@
 package io.github.derpsquad.portalmod;
 
-import io.github.derpsquad.portalmod.block.PortalModBlocks;
-
-import org.apache.logging.log4j.Level;
-import org.apache.logging.log4j.Logger;
-
-import net.minecraft.init.Blocks;
-import net.minecraftforge.fml.common.FMLLog;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = PortalMod.MODID, version = PortalMod.VERSION)
-public class PortalMod
-{
-    public static final String MODID = "portalmod";
-    public static final String VERSION = "0.0.1";
-    
-    public static Logger logger;
-    
-    @EventHandler
-    public void preInit(FMLPreInitializationEvent event) {
-    	logger = event.getModLog();
-    }
-    
-    @EventHandler
-    public void init(FMLInitializationEvent event)
-    {
+import org.apache.logging.log4j.Logger;
+
+@Mod(modid = PortalMod.MODID, name = PortalMod.NAME, version = PortalMod.VERSION)
+public class PortalMod {
+	public static final String MODID = "portalmod";
+	public static final String VERSION = "0.0.2";
+	public static final String NAME = "Portal Mod";
+	
+	@SidedProxy(clientSide = "io.github.derpsquad.portalmod.client.ClientProxy", serverSide = "io.github.derpsquad.portalmod.CommonProxy")
+	public static CommonProxy proxy;
+	
+	public static Logger logger;
+
+	@EventHandler
+	public void preInit(FMLPreInitializationEvent event) {
+		logger = event.getModLog();
+		proxy.preInit(event);
+	}
+
+	@EventHandler
+	public void init(FMLInitializationEvent event) {
 		logger.info("Hello World!");
-		PortalModBlocks.init();
-    }
+		proxy.init(event);
+	}
+
+	@EventHandler
+	public void postInit(FMLPreInitializationEvent event) {
+		proxy.postInit(event);
+	}
 }
