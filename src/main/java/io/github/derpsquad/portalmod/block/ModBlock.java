@@ -7,15 +7,18 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 
 public class ModBlock extends Block {
+	
+	private String name;
 
 	protected ModBlock(Material materialIn, String name) {
 		super(materialIn);
+		this.name = name;
 		GameRegistry.registerBlock(this, name);
 		setUnlocalizedName(PortalMod.MODID + "_" + name);
 		setCreativeTab(CreativeTabs.tabRedstone); // TODO new creative tab
 	}
 	
-	@Override public int getRenderType(){
-		return 3;
+	public String getName() {
+		return name;
 	}
 }
