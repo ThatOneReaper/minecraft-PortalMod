@@ -11,7 +11,7 @@ import org.apache.logging.log4j.Logger;
 @Mod(modid = PortalMod.MODID, name = PortalMod.NAME, version = PortalMod.VERSION)
 public class PortalMod {
 	public static final String MODID = "portalmod";
-	public static final String VERSION = "0.0.2";
+	public static final String VERSION = "0.0.3";
 	public static final String NAME = "Portal Mod";
 	
 	@SidedProxy(clientSide = "io.github.derpsquad.portalmod.client.ClientProxy", serverSide = "io.github.derpsquad.portalmod.CommonProxy")
