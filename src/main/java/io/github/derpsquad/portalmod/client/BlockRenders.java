@@ -14,6 +14,7 @@ public class BlockRenders {
 		registerBlock(PortalModBlocks.basicPortal);
 		
 		// Items
+		registerItem(PortalModItems.nuggetGlass);
 		registerItem(PortalModItems.teleportationCore);
 	}
 	
