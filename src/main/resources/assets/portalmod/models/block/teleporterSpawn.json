@@ -1,7 +1,12 @@
 {
 	"parent": "block/cube_all",
 	"textures": {
-		"all": "portalmod:blocks/teleporterSpawn",
+		"down": "portalmod:blocks/teleporterSpawn",
+        "up": "portalmod:blocks/portalGreen",
+        "north": "portalmod:blocks/teleporterSpawn",
+        "east": "portalmod:blocks/teleporterSpawn",
+        "south": "portalmod:blocks/teleporterSpawn",
+        "west": "portalmod:blocks/teleporterSpawn",
        "particle": "blocks/lapis_block"
 	}
 }
