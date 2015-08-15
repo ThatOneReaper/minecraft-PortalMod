@@ -14,7 +14,7 @@ public class ModItem extends Item {
 		this.name = name;
 		GameRegistry.registerItem(this, name);
 		setUnlocalizedName(PortalMod.MODID + "_" + name);
-		setCreativeTab(CreativeTabs.tabRedstone); // TODO new creative tab
+		setCreativeTab(PortalMod.itemTab); // TODO new creative tab
 	}
 	
 	public String getName() {

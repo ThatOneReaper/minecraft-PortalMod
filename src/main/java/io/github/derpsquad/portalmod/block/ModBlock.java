@@ -15,7 +15,7 @@ public class ModBlock extends Block {
 		this.name = name;
 		GameRegistry.registerBlock(this, name);
 		setUnlocalizedName(PortalMod.MODID + "_" + name);
-		setCreativeTab(CreativeTabs.tabRedstone); // TODO new creative tab
+		setCreativeTab(PortalMod.itemTab); // TODO new creative tab
 	}
 	
 	public String getName() {

@@ -1,5 +1,6 @@
 package io.github.derpsquad.portalmod;
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -7,6 +8,8 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 import org.apache.logging.log4j.Logger;
+
+import io.github.derpsquad.portalmod.tabs.ItemTab;
 
 @Mod(modid = PortalMod.MODID, name = PortalMod.NAME, version = PortalMod.VERSION)
 public class PortalMod {
@@ -18,11 +21,13 @@ public class PortalMod {
 	public static CommonProxy proxy;
 	
 	public static Logger logger;
-
+	public static CreativeTabs itemTab = new ItemTab(CreativeTabs.getNextID(),"portalTab");
+	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		logger = event.getModLog();
 		proxy.preInit(event);
+		
 	}
 
 	@EventHandler
