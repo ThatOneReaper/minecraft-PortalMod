@@ -16,6 +16,8 @@ public class ModRenders {
 		// Items
 		registerItem(PortalModItems.nuggetGlass);
 		registerItem(PortalModItems.teleportationCore);
+		registerItem(PortalModItems.glassArrowhead);
+		registerItem(PortalModItems.glassRod);
 	}
 	
 	private static void registerItem(ModItem item) {
