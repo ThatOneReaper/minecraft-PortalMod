@@ -8,7 +8,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 
-public class BlockRenders {
+public class ModRenders {
 	public static void registerAll() {
 		// Blocks
 		registerBlock(PortalModBlocks.basicPortal);

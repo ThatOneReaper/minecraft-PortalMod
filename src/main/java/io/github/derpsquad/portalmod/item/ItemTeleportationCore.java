@@ -8,8 +8,4 @@ public class ItemTeleportationCore extends ModItem {
 	protected ItemTeleportationCore() {
 		super(name);
 	}
-	
-	public String getName() {
-		return name;
-	}
 }
