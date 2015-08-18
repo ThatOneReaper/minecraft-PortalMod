@@ -7,12 +7,13 @@ public class PortalModItems {
 	public static ModItem nuggetGlass;
 	public static ModItem glassArrowhead;
 	public static ModItem glassRod;
-	public static ModItem glassArrow;
+	public static ModItem nuggetGlassQuartz;
 	
 	public static void init() {
 		teleportationCore = new ItemTeleportationCore();
 		nuggetGlass = new ModItem("nuggetGlass");
 		glassArrowhead = new ModItem("glassArrowhead");
 		glassRod = new ModItem("glassRod");
+		nuggetGlassQuartz = new ModItem("nuggetGlassQuartz");
 	}
 }
