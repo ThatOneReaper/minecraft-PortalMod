@@ -2,7 +2,6 @@ package io.github.derpsquad.portalmod.block;
 import io.github.derpsquad.portalmod.PortalMod;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 
@@ -18,6 +17,7 @@ public class ModBlock extends Block {
 		setCreativeTab(PortalMod.itemTab); // TODO new creative tab
 	}
 	
+	// for easy reference
 	public String getName() {
 		return name;
 	}
