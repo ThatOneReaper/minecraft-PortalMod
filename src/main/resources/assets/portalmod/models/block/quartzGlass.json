@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "down": "portalmod:blocks/quartzGlass",
+        "up": "portalmod:blocks/quartzGlass",
+        "north": "portalmod:blocks/quartzGlass",
+        "east": "portalmod:blocks/quartzGlass",
+        "south": "portalmod:blocks/quartzGlass",
+        "west": "portalmod:blocks/quartzGlass",
+       "particle": "blocks/glass"
+    }
+}

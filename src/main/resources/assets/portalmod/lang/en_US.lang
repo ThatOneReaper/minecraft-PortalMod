@@ -6,3 +6,5 @@ item.portalmod_glassArrowhead.name=Glass Arrowhead
 item.portalmod_glassRod.name=Glass Rod
 
 tile.portalmod_teleporterSpawn.name=Spawn Teleporter
+tile.portalmod_quartzGlass.name=Quartz Glass
+tile.portalmod_crucible.name=Crucible
