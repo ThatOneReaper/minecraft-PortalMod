@@ -23,10 +23,10 @@ public class ModRenders {
 		registerItem(PortalModItems.ironSabre);
 	}
 	
-	private static void registerItem(INamedItem item) {
+	private static <T extends Item & INamedItem> void registerItem(T item) {
 		ModelResourceLocation itemModelResourceLocation =
 				new ModelResourceLocation("portalmod:" + item.getName(), "inventory");
-		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register((Item) item, 0,
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0,
 				itemModelResourceLocation);
 	}
 	
