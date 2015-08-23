@@ -4,6 +4,7 @@ item.portalmod_teleportationCore.name=Teleportation Core
 item.portalmod_nuggetGlass.name=Glass Nugget
 item.portalmod_glassArrowhead.name=Glass Arrowhead
 item.portalmod_glassRod.name=Glass Rod
+item.portalmod_ironSabre.name=Iron Sabre
 
 tile.portalmod_teleporterSpawn.name=Spawn Teleporter
 tile.portalmod_quartzGlass.name=Quartz Glass

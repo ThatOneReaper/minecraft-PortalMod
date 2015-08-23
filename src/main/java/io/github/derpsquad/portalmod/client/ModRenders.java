@@ -2,7 +2,7 @@ package io.github.derpsquad.portalmod.client;
 
 import io.github.derpsquad.portalmod.block.ModBlock;
 import io.github.derpsquad.portalmod.block.PortalModBlocks;
-import io.github.derpsquad.portalmod.item.ModItem;
+import io.github.derpsquad.portalmod.item.INamedItem;
 import io.github.derpsquad.portalmod.item.PortalModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
@@ -20,12 +20,13 @@ public class ModRenders {
 		registerItem(PortalModItems.glassArrowhead);
 		registerItem(PortalModItems.glassRod);
 		registerItem(PortalModItems.nuggetQuartzGlass);
+		registerItem(PortalModItems.ironSabre);
 	}
 	
-	private static void registerItem(ModItem item) {
+	private static void registerItem(INamedItem item) {
 		ModelResourceLocation itemModelResourceLocation =
 				new ModelResourceLocation("portalmod:" + item.getName(), "inventory");
-		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0,
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register((Item) item, 0,
 				itemModelResourceLocation);
 	}
 	
