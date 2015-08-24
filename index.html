@@ -54,6 +54,31 @@ $(document).ready(function(){
 	<div class="col-sm-9">
 		<div class="panel panel-primary">
 			<div class="panel-heading">
+			<strong>Glassworks</strong><strong class="pull-right">24 Aug 2015</strong>
+			</div>
+			<div class="panel-body">
+			<p>Lots of new features as of now, and plenty more to come. The first teleporter has finally been added
+			and will teleport you directly to spawn. Additionally, items like the Teleportation Core have been added
+			in order to assist in the creation of these new items.
+			</p>
+			<p>The introduction of the Glass Nugget sparked	the creation of lots of new items, including the Glass
+			Rod and Glass Arrowhead which, you guessed it, will lead to the Glass Arrow. A set of glass armour has also
+			been drafted up. Glass itself will have a stronger, more durable variant. Quartz glass and its nugget
+			form have also been introduced.
+			</p>
+			<p>To wrap up the latest updates, a new weapon has been in the works: the Saber. An Iron Saber exists in
+			the code so far, we're working on wood, stone, gold, diamond, and glass 'flavours'. 
+			</p>
+			<p>We may have strayed a bit from the original intentions, but there's lots of cool stuff going on so
+			stay tuned!</p>
+			</div>
+			<div class="panel-footer">
+			<em>~abujaki21</em><em class="pull-right"><a href="https://github.com/ThatOneReaper/minecraft-PortalMod/commit/b34e28b9fb0f08b257a34d1bf3ba508a0076fb3d">latest commit: b34e28b9fb</a></em>
+			</div>
+		</div>
+
+		<div class="panel panel-primary">
+			<div class="panel-heading">
 			<strong>Omg Stuff!</strong><strong class="pull-right">11 Aug 2015</strong>
 			</div>
 			<div class="panel-body">
@@ -122,7 +147,11 @@ $(document).ready(function(){
 		   	
 		   	<h4>Progress toward next update:</h4>
 			<div class="progress">
-				<div class="progress-bar" role="progressbar" style="width:1%"></div>
+				<div class="progress-bar progress-bar-success" role="progressbar" id="completedBar"></div>
+				<div class="progress-bar progress-bar-info" role="progressbar" id="featureBar"></div>
+				<div class="progress-bar progress-bar-warning" role="progressbar" id="fixBar"></div>
+				<div class="progress-bar progress-bar-danger" role="progressbar" id="criticalBar"></div>
+				<div id="jsLoadErr" class="bg-warning text-warning text-center">JS Load Error</div>
 			</div>
 				<strong>Estimated release date:</strong> ??/??/20??
 
