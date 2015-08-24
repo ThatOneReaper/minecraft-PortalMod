@@ -34,4 +34,12 @@ $.get("https://api.github.com/repos/ThatOneReaper/minecraft-PortalMod/issues?sta
 	$("#fixBadge").text(numFix);
 	$("#criticalBadge").text(numCritical);
 	$("#completedBadge").text(numClosed);
+		
+	var numTotal = numFeature + numFix + numCritical + numClosed;
+	
+	$("#completedBar").width((numClosed/numTotal)*100 + "%");
+	$("#featureBar").width((numFeature/numTotal)*100 + "%");
+	$("#fixBar").width((numFix/numTotal)*100 + "%");
+	$("criticalBar".width((numCritical/numTotal)*100 + "%");
+
 });
