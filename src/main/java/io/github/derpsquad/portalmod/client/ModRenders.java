@@ -21,6 +21,7 @@ public class ModRenders {
 		registerItem(PortalModItems.glassRod);
 		registerItem(PortalModItems.nuggetQuartzGlass);
 		registerItem(PortalModItems.ironSabre);
+		registerItem(PortalModItems.glassSabre);
 	}
 	
 	private static <T extends Item & INamedItem> void registerItem(T item) {
