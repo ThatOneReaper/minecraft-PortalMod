@@ -12,6 +12,7 @@ public class ModRenders {
 	public static void registerAll() {
 		// Blocks
 		registerBlock(PortalModBlocks.basicPortal);
+		registerBlock(PortalModBlocks.kiln);
 		
 		// Items
 		registerItem(PortalModItems.nuggetGlass);
